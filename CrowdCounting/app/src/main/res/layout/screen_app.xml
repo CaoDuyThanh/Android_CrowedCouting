@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_preferences"
+        android:id="@+id/btn_preference"
+        android:layout_gravity="right|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="settingDialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_camera"
+        android:id="@+id/btn_takepic"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="takePic"
+        android:layout_alignParentBottom="true" />
+
+    <!--
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_takepicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take now"
+        android:background="@android:color/holo_orange_light"/>
+    -->
+
+</RelativeLayout>
